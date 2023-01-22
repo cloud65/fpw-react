@@ -5,6 +5,8 @@ import AppWeather  from './AppWeather';
 
 
 const AppWeatherList=props=> {    
+    if (props.weatherList.length===1) return null;
+
     const items = props.weatherList.map((e, i)=>{
         const cls = "text-truncate app-bar hovered " + ((props.item===i) ? "selected" : "")
         return <Col key={e.dt} md={2} sm={3} xs={6}  className="text-center small not-padding">

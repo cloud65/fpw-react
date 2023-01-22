@@ -12,7 +12,7 @@ const AppWeather=props=> {
     
     const {temp, feels_like, grnd_level, humidity} = main
     
-    const strRain = (rain) ? `${rain['3h']}мм` : (snow) ? `${snow['3h']}мм` : ''
+    const strRain = (rain) ? `${rain['3h']}мм` : (snow) ? `${snow['3h']}мм` : null
     
     const block=(<>
         <Container className='small'>
@@ -32,13 +32,10 @@ const AppWeather=props=> {
             <Row>
                 <Col md={3} xs={3} className="text-center">
                     {block}                    
-                    <Container>
-                        {strRain}
-                    </Container>
                 </Col>
                 <Col md={9} xs={9}>
                     <Container>
-                        {description}
+                        {description} <span>{strRain}</span>
                     </Container>
                     <Container>
                         Температура: <span>{temp}&#176;</span>
