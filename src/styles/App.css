@@ -1,0 +1,83 @@
+body {
+    overflow: hidden;    
+}
+
+#root {
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #55a90b;
+}
+
+.not-padding {
+    padding: 0;
+}
+
+.header {
+    background-color: #eff1f3;
+    max-width: 100vw;
+    padding: 0 0.2em ;
+}
+
+.header span {
+    color: blue;
+}
+
+.app-field {
+    padding: 0;
+}
+
+.app-field.weather {
+    background-color: #f5feff;
+}
+
+.app-field.weather span {
+    color: blue;
+}
+
+.app-field.weather-content {
+    background-color: none;
+}
+
+.app-field.city {
+    /*background-color: #e1f1e1;*/
+}
+
+.app-field.city-block {
+    display: flex;
+    margin-top: 0.5rem;
+}    
+
+.app-field.interval {
+    /*background-color: cadetblue;*/
+}
+
+.footer {
+    background-color: brown;
+}
+
+.app-bar{
+    box-shadow: 0 2px 2px 0 rgb(34 36 38 / 12%), 0 2px 8px 0 rgb(34 36 38 / 15%);
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.app-bar.hovered:hover{
+    box-shadow: 0 6px 3px 0 rgb(40 40 40 / 20%), 6px 0 8px 0 rgb(40 40 40 / 20%);
+    /*border: 1px dashed #67a16a;*/
+}
+
+.app-bar.selected{
+    background-color: #f5feff;
+}
+
+.scroll-list {    
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+    
